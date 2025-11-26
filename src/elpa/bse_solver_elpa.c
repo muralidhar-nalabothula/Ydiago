@@ -300,6 +300,7 @@ end_BSE_Solver2:;
 
 end_BSE_Solver1:;
     free(Ham_r);
+    int mpi_error = MPI_Bcast(eig_vals, neigs, D_Cmplx_MPI_TYPE, 0, matA->comm);
     // Bcast eigen values to all cpus
 end_BSE_Solver0:;
     return error;
