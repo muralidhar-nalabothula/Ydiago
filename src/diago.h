@@ -58,9 +58,14 @@
 #endif
 #endif
 
+/*
+AF: Commented out in order toallow for GPU-compilation
+    of Yambo using Ydiago but without ELPA
+
 #if defined(WITH_GPU) && !defined(WITH_ELPA)
 #error GPU support is available only when compiled with elpa
 #endif
+*/
 
 // =========
 #ifdef WITH_DOUBLE
